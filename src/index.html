@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <header>
+          <div>
+            <figure>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#0ed100"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-dollar-sign-icon lucide-dollar-sign"
+                id="title-svg"
+              >
+                <line x1="12" x2="12" y1="2" y2="22" />
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+              </svg>
+            </figure>
+            <h1>Cash Register</h1>
+          </div>
+          <p>Complete your transaction</p>
+        </header>
+        <div class="container">
+          <p class="title-container">Total Due</p>
+          <p class="due-container">$19.50</p>
+          <div class="label-cash">
+            <label for="cash">
+              Cash Received
+              <div class="input-wrapper">
+                <figure>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#969696"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-dollar-sign-icon lucide-dollar-sign"
+                    id="cash"
+                  >
+                    <line x1="12" x2="12" y1="2" y2="22" />
+                    <path
+                      d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                    />
+                  </svg>
+                </figure>
+                <input id="cash" placeholder="0.00" />
+              </div>
+            </label>
+          </div>
+          <button class="purchase-btn" id="purchase-btn">
+            Complete Purcharse
+          </button>
+          <p>Transaction details will appear here</p>
+          <div class="change-due" id="change-due">
+            <figure>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ff0000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-alert-icon lucide-circle-alert"
+                id="insufficient"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" x2="12" y1="8" y2="12" />
+                <line x1="12" x2="12.01" y1="16" y2="16" />
+              </svg>
+            </figure>
+            <p>Status:</p>
+            <p></p>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#0b4dd0"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-check-big-icon lucide-circle-check-big"
+                id="check"
+              >
+                <path d="M21.801 10A10 10 0 1 1 17 3.335" />
+                <path d="m9 11 3 3L22 4" />
+              </svg>
+              <p>Status:</p>
+              <p>Change breakdown:</p>
+              <span class="change"></span>
+            </div>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-refresh-ccw-icon lucide-refresh-ccw"
+                id="recharge"
+              >
+                <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                <path d="M3 3v5h5" />
+                <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
+                <path d="M16 16h5v5" />
+              </svg>
+              New Transaction
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <p>© 2025 Dylan. 🌐 MIT license</p>
+      <p>Designed and developed with ❤️</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

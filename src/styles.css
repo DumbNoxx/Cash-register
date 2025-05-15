@@ -37,6 +37,9 @@ article {
   padding: 1rem 2rem;
   background-color: var(--background-container);
   border-radius: 0.5rem;
+  box-shadow: 2px -1px 32px 13px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 2px -1px 32px 13px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 2px -1px 32px 13px rgba(0, 0, 0, 0.17);
 }
 
 header {

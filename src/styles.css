@@ -172,3 +172,55 @@ footer {
   margin: 2% auto;
   text-align: center;
 }
+
+.globe-span {
+  display: inline;
+}
+
+@keyframes rotacionX {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+
+#globe {
+  width: 1.2rem;
+  position: absolute;
+  margin-top: -0.2rem;
+  margin-left: 0.4rem;
+  animation: rotacionX 2s infinite;
+}
+
+#hearts {
+  animation: heart 2s infinite;
+}
+
+.footer-p2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.heart-svg {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}

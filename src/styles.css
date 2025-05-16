@@ -203,11 +203,11 @@ footer {
   position: absolute;
   margin-top: -0.2rem;
   margin-left: 0.4rem;
-  animation: rotacionX 2s infinite;
+  animation: rotacionX 4s infinite;
 }
 
 #hearts {
-  animation: heart 2s infinite;
+  animation: heart 3s infinite;
 }
 
 .footer-p2 {

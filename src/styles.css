@@ -4,8 +4,8 @@
   /* Colors */
   --background-body: #f8f8f8;
   --background-container: #fff;
-  --background-insufficient: #fd8282;
-  --background-closed: #82adfd;
+  --background-insufficient: #ffdada;
+  --background-closed: #dae7ff;
   --background-check: #b3fd82;
   --background-labels: #f1f1f1;
 
@@ -134,6 +134,7 @@ header p {
 }
 
 .change-due {
+  margin-top: 2rem;
   border: 1px solid;
   border-radius: 0.5rem;
   display: none;
@@ -151,8 +152,13 @@ header p {
   margin-left: -2rem;
   font-size: 1.1rem;
 }
+#text-insufficient {
+  margin-left: 1rem;
+  color: red;
+}
 .change-breakdown {
   display: none;
+  margin-left: 1rem;
 }
 
 #insufficient {
@@ -165,6 +171,32 @@ header p {
 
 .new-transaction {
   display: none;
+  margin: 5% auto;
+  width: 36%;
+  height: 2rem;
+  border: 0;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-left: 2rem;
+  transition: 0.3s ease;
+}
+
+.divider-transaction {
+  border-top: 2px solid #dbdbdb;
+  margin-top: 10%;
+  display: none;
+}
+.new-transaction:hover {
+  background-color: #dbdbdb;
+}
+
+#recharge {
+  width: 1.2rem;
+  position: absolute;
+  margin-top: -0.2rem;
+  margin-left: -1.4rem;
+  animation: recharge 2s linear infinite;
+  transform-origin: center;
 }
 
 footer {
@@ -198,16 +230,28 @@ footer {
   }
 }
 
+@keyframes recharge {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 #globe {
   width: 1.2rem;
   position: absolute;
   margin-top: -0.2rem;
   margin-left: 0.4rem;
-  animation: rotacionX 4s infinite;
+  animation: rotacionX 4s linear infinite;
 }
 
 #hearts {
-  animation: heart 3s infinite;
+  animation: heart 3s linear infinite;
 }
 
 .footer-p2 {

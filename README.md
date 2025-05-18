@@ -5,8 +5,6 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-> ⚠️ Project under construction — core features are still being developed.
-
 ## 🧾 Description
 
 Simulates a cash register that calculates and returns change to the customer based on the item's price, the cash received, and the cash available in the drawer.  
@@ -14,7 +12,7 @@ It displays status messages like (`OPEN`, `CLOSED`, `INSUFFICIENT_FUNDS`) and re
 
 ## 🌐 Demo
 
-🔗 Coming soon
+🔗 [Cash Register](https://cash-register-umber.vercel.app/)
 
 ## 📋 Features
 

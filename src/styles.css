@@ -4,9 +4,9 @@
   /* Colors */
   --background-body: #f8f8f8;
   --background-container: #fff;
-  --background-insufficient: #ffdada;
-  --background-closed: #dae7ff;
-  --background-check: #b3fd82;
+  --background-insufficient: #b2dbad;
+  --background-closed: #dbadad;
+  --background-check: #deffda;
   --background-labels: #f1f1f1;
 
   /* Font size */
@@ -135,7 +135,7 @@ header p {
 
 .change-due {
   margin-top: 2rem;
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 0.5rem;
   display: none;
 }
@@ -159,6 +159,37 @@ header p {
 .change-breakdown {
   display: none;
   margin-left: 1rem;
+}
+
+.not-change {
+  margin-left: 2rem;
+  border: 0;
+  padding: 0.4rem;
+  width: 6rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: #c1ccdf;
+}
+.change {
+  display: flex;
+  justify-content: flex-start; /* Alinea los elementos al inicio */
+  gap: 0.5rem; /* Añade espacio entre los elementos */
+  max-width: 30rem;
+  padding: 1rem; /* Añade espacio interno para mejor organización */
+  overflow-x: auto; /* Permite desplazamiento horizontal si los elementos no caben */
+}
+.changes {
+  margin: 0; /* Elimina márgenes laterales para mejor ajuste */
+  border: 0;
+  padding: 0.4rem;
+  width: auto; /* Ajusta el ancho automáticamente */
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: #c5dfc1;
+  text-align: center; /* Centra el contenido */
+  white-space: nowrap; /* Evita que los elementos se envuelvan */
 }
 
 #insufficient {

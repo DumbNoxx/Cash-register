@@ -29,12 +29,6 @@ const change = document.querySelector(".change");
 
 const cidOriginal = cid.map((item) => [...item]);
 
-window.addEventListener("DOMContentLoaded", (event) => {
-  document.querySelector(".details-text").classList.remove("skeleton");
-  document.querySelector(".details-text").textContent =
-    "Transaction details will appear here";
-});
-
 class CashRegister {
   constructor(cash, price) {
     this.cash = cash;

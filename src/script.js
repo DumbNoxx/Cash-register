@@ -29,6 +29,12 @@ const change = document.querySelector(".change");
 
 const cidOriginal = cid.map((item) => [...item]);
 
+window.addEventListener("DOMContentLoaded", (event) => {
+  document.querySelector(".details-text").classList.remove("skeleton");
+  document.querySelector(".details-text").textContent =
+    "Transaction details will appear here";
+});
+
 class CashRegister {
   constructor(cash, price) {
     this.cash = cash;
@@ -60,6 +66,7 @@ class CashRegister {
     alert("No change due - customer paid with exact cash");
     changeDue.style.backgroundColor = "#dae7ff";
     svgCheck.style.display = "block";
+    svgCheck.style.stroke = "blue";
     statusText.textContent += " CLOSED";
     changeDue.style.borderColor = "#adbcdb";
     changeBreakdown.style.display = "block";
